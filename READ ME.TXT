@@ -1,0 +1,64 @@
+---------------Các thư viện cần thiết---------------------------
+from tkinter import * -----> pip install tk
+
+import pyodbc -----> pip install pyodbc
+
+import os -----> has install already
+
+import tkinter -----> pip install tk
+
+import PIL.Image, PIL.ImageTk -----> pip install pillow 
+
+import urllib.request -----> has install already
+
+import re -----> has install already
+
+import pytube -----> pip install pytube
+
+import pygame -----> pip install pygame or pip3 install pygame
+
+from tkinter import filedialog -----> has install already
+ 
+import time -----> has install already
+
+from tkinter import Tk,ttk,Button -----> pip install tk
+
+from tkinter import messagebox -----> has install already
+
+from random import randint -----> has install already
+
+import pygame, sys, random -----> pip install pygame or pip3 install pygame
+
+import random -----> has install already
+
+import sys -----> has install already
+
+from pygame.locals import * -----> pip install pygame or pip3 install pygame
+
+---------------Các điều kiện cần thiết---------------------------
+Cần tải SQL về máy
+Link Tải: https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+Link Hướng dẫn tải: https://www.youtube.com/watch?v=EQHvOC_kaxU
+
+Cần tạo Database và table để có thể đăng nhập và đăng ký
+
+CREATE DATABASE FUN_Account;
+USE FUN_Account;
+CREATE TABLE users
+(  
+	HO nvarchar(50) NOT NULL,
+	TEN nvarchar(50) NOT NULL,
+	username nvarchar(50) NOT NULL,
+	password nvarchar(50) NOT NULL,
+);
+
+Sau đó đổi ở trong phần Login, Register
+
+    conx = pyodbc.connect("Driver={SQL Server};"
+                    "Server=LAPTOP-G463R823\SQLEXPRESS;" --> Đổi tên server
+                    "Database=FUN_Account;"
+                    "Trusted_Connection=yes;")
+
+Thêm Floder Movie List và bỏ video Iron Man.mp4 vào đó
+
+Thêm Floder Music List ở FLoder Music rồi thêm nhạc mp3 vào, còn mp4 có thể tải trực tiếp bằng ứng dụng
